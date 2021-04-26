@@ -17,6 +17,10 @@ app.get("/pages/client", (require, response) => {
     return response.render("html/client.html");
 });
 
+app.get("/pages/admin", (require, response) => {
+    return response.render("html/admin.html");
+});
+
 const http = createServer(app);     //Criando protocolo HTTP
 const io = new Server(http);        //Criando protocolo ws
 
